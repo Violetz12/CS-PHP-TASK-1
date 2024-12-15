@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #2c3e50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.house {
+    width: 600px;
+    height: 400px;
+    background-color: #34495e;
+    position: relative;
+    perspective: 1000px;
+}
+
+.floor {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #7f8c8d;
+}
+
+.wall {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);  /* Divide wall into 4 equal columns */
+    gap: 20px;  /* Space between doors */
+    justify-items: center;
+    align-items: center;
+    height: 350px;
+    background-color: #95a5a6;
+    padding: 0 20px;
+}
+
+.door {
+    width: 150px;
+    height: 250px;
+    background-color: #8e44ad;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.door:hover {
+    transform: scale(1.05);
+}
+
+.doorknob {
+    width: 20px;
+    height: 20px;
+    background-color: #2c3e50;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+}
+
+.door a {
+    color: white;
+    font-weight: bold;
+}
+
+.room-image{
+    width: 800px;
+}
